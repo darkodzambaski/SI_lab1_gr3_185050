@@ -9,6 +9,7 @@ class Item {
 		B=0.5;
 		V=0;
 	}
+
 	//TODO constructor
 
 	public Item(int id, String name, double price,enum DDV) {
@@ -56,4 +57,20 @@ class Item {
 		kd=dd*r;
 		return taxReturn();
 	}
+}
+class Receipt{
+	List<Integer> grades = new ArrayList<Integer>();
+
+	public Receipt(List<Integer> grades) {
+		this.grades = grades;
+	}
+
+	public List<Integer> getGrades() {
+		return grades;
+	}
+
+	public void setGrades(List<Integer> grades) {
+		this.grades = grades;
+	}
+	
 }
